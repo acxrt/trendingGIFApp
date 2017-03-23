@@ -1,0 +1,6 @@
+framework module Pods_trendingGIFApp {
+  umbrella header "Pods-trendingGIFApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

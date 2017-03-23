@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E5F12C96A924E54A1AD574A /* Pods_trendingGIFApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10406B4F5DD8BD7680C5FAAE /* Pods_trendingGIFApp.framework */; };
 		8BEFD45B1E84265500E7B9F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFD45A1E84265500E7B9F1 /* AppDelegate.swift */; };
 		8BEFD45D1E84265500E7B9F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFD45C1E84265500E7B9F1 /* ViewController.swift */; };
 		8BEFD4601E84265500E7B9F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEFD45E1E84265500E7B9F1 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10406B4F5DD8BD7680C5FAAE /* Pods_trendingGIFApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trendingGIFApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEFD4571E84265500E7B9F1 /* trendingGIFApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trendingGIFApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEFD45A1E84265500E7B9F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEFD45C1E84265500E7B9F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		8BEFD47D1E84265500E7B9F1 /* trendingGIFAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trendingGIFAppUITests.swift; sourceTree = "<group>"; };
 		8BEFD47F1E84265500E7B9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BEFD48B1E84270A00E7B9F1 /* TrendingGIFCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingGIFCollectionViewController.swift; sourceTree = "<group>"; };
+		90DF2EF48410912502B42BF8 /* Pods_trendingGIFAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trendingGIFAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95D3A671A43B1D98D94F2786 /* Pods-trendingGIFApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trendingGIFApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-trendingGIFApp/Pods-trendingGIFApp.release.xcconfig"; sourceTree = "<group>"; };
+		C7A8AB942A270BA0AB37543B /* Pods_trendingGIFAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trendingGIFAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD74B068CD1238F99011D42D /* Pods-trendingGIFApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trendingGIFApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-trendingGIFApp/Pods-trendingGIFApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5F12C96A924E54A1AD574A /* Pods_trendingGIFApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A7639EAB04784A14E6F6329 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10406B4F5DD8BD7680C5FAAE /* Pods_trendingGIFApp.framework */,
+				C7A8AB942A270BA0AB37543B /* Pods_trendingGIFAppTests.framework */,
+				90DF2EF48410912502B42BF8 /* Pods_trendingGIFAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A33FBD95EEB6F87BF29AD6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD74B068CD1238F99011D42D /* Pods-trendingGIFApp.debug.xcconfig */,
+				95D3A671A43B1D98D94F2786 /* Pods-trendingGIFApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8BEFD44E1E84265500E7B9F1 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +111,8 @@
 				8BEFD4711E84265500E7B9F1 /* trendingGIFAppTests */,
 				8BEFD47C1E84265500E7B9F1 /* trendingGIFAppUITests */,
 				8BEFD4581E84265500E7B9F1 /* Products */,
+				8A33FBD95EEB6F87BF29AD6B /* Pods */,
+				6A7639EAB04784A14E6F6329 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BEFD4821E84265500E7B9F1 /* Build configuration list for PBXNativeTarget "trendingGIFApp" */;
 			buildPhases = (
+				A854B3D7E88A67FD1E9B5FE8 /* [CP] Check Pods Manifest.lock */,
 				8BEFD4531E84265500E7B9F1 /* Sources */,
 				8BEFD4541E84265500E7B9F1 /* Frameworks */,
 				8BEFD4551E84265500E7B9F1 /* Resources */,
+				B2F323F4F0415725D14BC7ED /* [CP] Embed Pods Frameworks */,
+				FD7AF2CD6DE0CBDBD848287C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +290,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A854B3D7E88A67FD1E9B5FE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2F323F4F0415725D14BC7ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-trendingGIFApp/Pods-trendingGIFApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD7AF2CD6DE0CBDBD848287C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-trendingGIFApp/Pods-trendingGIFApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8BEFD4531E84265500E7B9F1 /* Sources */ = {
@@ -416,6 +495,7 @@
 		};
 		8BEFD4831E84265500E7B9F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD74B068CD1238F99011D42D /* Pods-trendingGIFApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = trendingGIFApp/Info.plist;
@@ -428,6 +508,7 @@
 		};
 		8BEFD4841E84265500E7B9F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D3A671A43B1D98D94F2786 /* Pods-trendingGIFApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = trendingGIFApp/Info.plist;
