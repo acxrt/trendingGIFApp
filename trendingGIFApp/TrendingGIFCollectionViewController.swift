@@ -21,6 +21,8 @@ class TrendingGIFCollectionViewController: UICollectionViewController, UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addSpinnerView()
+        
         let numberOfGifs = 20
         let apiKey = "dc6zaTOxFJmzC" // TODO: Request a Production Key
         loadTrendingGifsWith(limit: numberOfGifs, apiKey: apiKey)
@@ -89,6 +91,7 @@ class TrendingGIFCollectionViewController: UICollectionViewController, UICollect
                 }
                 
                 self.collectionView?.reloadData()
+                self.removeLoadingView()
                 
             case .failure(let error):
                 print(error)

@@ -18,6 +18,7 @@
 		8BEFD4731E84265500E7B9F1 /* trendingGIFAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFD4721E84265500E7B9F1 /* trendingGIFAppTests.swift */; };
 		8BEFD47E1E84265500E7B9F1 /* trendingGIFAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFD47D1E84265500E7B9F1 /* trendingGIFAppUITests.swift */; };
 		8BEFD48C1E84270A00E7B9F1 /* TrendingGIFCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFD48B1E84270A00E7B9F1 /* TrendingGIFCollectionViewController.swift */; };
+		A5158EB21E84581C0039BD0F /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5158EB11E84581C0039BD0F /* ViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		8BEFD48B1E84270A00E7B9F1 /* TrendingGIFCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingGIFCollectionViewController.swift; sourceTree = "<group>"; };
 		90DF2EF48410912502B42BF8 /* Pods_trendingGIFAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trendingGIFAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D3A671A43B1D98D94F2786 /* Pods-trendingGIFApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trendingGIFApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-trendingGIFApp/Pods-trendingGIFApp.release.xcconfig"; sourceTree = "<group>"; };
+		A5158EB11E84581C0039BD0F /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		C7A8AB942A270BA0AB37543B /* Pods_trendingGIFAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trendingGIFAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD74B068CD1238F99011D42D /* Pods-trendingGIFApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trendingGIFApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-trendingGIFApp/Pods-trendingGIFApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +142,7 @@
 				8BEFD4611E84265500E7B9F1 /* trendingGIFApp.xcdatamodeld */,
 				8BEFD48B1E84270A00E7B9F1 /* TrendingGIFCollectionViewController.swift */,
 				8B9716C81E844267002EBBAE /* gifCollectionViewCell.swift */,
+				A5158EB11E84581C0039BD0F /* ViewControllerExtension.swift */,
 			);
 			path = trendingGIFApp;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			files = (
 				8BEFD45D1E84265500E7B9F1 /* ViewController.swift in Sources */,
 				8BEFD45B1E84265500E7B9F1 /* AppDelegate.swift in Sources */,
+				A5158EB21E84581C0039BD0F /* ViewControllerExtension.swift in Sources */,
 				8B9716C91E844267002EBBAE /* gifCollectionViewCell.swift in Sources */,
 				8BEFD48C1E84270A00E7B9F1 /* TrendingGIFCollectionViewController.swift in Sources */,
 				8BEFD4631E84265500E7B9F1 /* trendingGIFApp.xcdatamodeld in Sources */,
