@@ -15,6 +15,7 @@
 		8BEFD4681E84265500E7B9F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEFD4661E84265500E7B9F1 /* LaunchScreen.storyboard */; };
 		8BEFD4731E84265500E7B9F1 /* trendingGIFAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFD4721E84265500E7B9F1 /* trendingGIFAppTests.swift */; };
 		8BEFD47E1E84265500E7B9F1 /* trendingGIFAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFD47D1E84265500E7B9F1 /* trendingGIFAppUITests.swift */; };
+		8BEFD48C1E84270A00E7B9F1 /* TrendingGIFCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFD48B1E84270A00E7B9F1 /* TrendingGIFCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8BEFD4791E84265500E7B9F1 /* trendingGIFAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = trendingGIFAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEFD47D1E84265500E7B9F1 /* trendingGIFAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trendingGIFAppUITests.swift; sourceTree = "<group>"; };
 		8BEFD47F1E84265500E7B9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BEFD48B1E84270A00E7B9F1 /* TrendingGIFCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingGIFCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				8BEFD4661E84265500E7B9F1 /* LaunchScreen.storyboard */,
 				8BEFD4691E84265500E7B9F1 /* Info.plist */,
 				8BEFD4611E84265500E7B9F1 /* trendingGIFApp.xcdatamodeld */,
+				8BEFD48B1E84270A00E7B9F1 /* TrendingGIFCollectionViewController.swift */,
 			);
 			path = trendingGIFApp;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				8BEFD45D1E84265500E7B9F1 /* ViewController.swift in Sources */,
 				8BEFD45B1E84265500E7B9F1 /* AppDelegate.swift in Sources */,
+				8BEFD48C1E84270A00E7B9F1 /* TrendingGIFCollectionViewController.swift in Sources */,
 				8BEFD4631E84265500E7B9F1 /* trendingGIFApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
