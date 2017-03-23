@@ -13,7 +13,7 @@
         <scene sceneID="fKB-SV-i2a">
             <objects>
                 <navigationController id="DWW-Jj-ezP" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="8LD-AO-Ulh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="8LD-AO-Ulh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,7 +35,7 @@
         <scene sceneID="HIO-Ri-NVN">
             <objects>
                 <collectionViewController storyboardIdentifier="TrendingGif" title="Trending GIFs" id="jIU-5e-QDN" customClass="TrendingGIFCollectionViewController" customModule="trendingGIFApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="AvB-hm-T4h">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="AvB-hm-T4h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,14 +46,28 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gifCell" id="8XJ-eC-zeB">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gifCell" id="8XJ-eC-zeB" customClass="gifCollectionViewCell" customModule="trendingGIFApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FJV-Ee-c4h">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        </imageView>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="FJV-Ee-c4h" firstAttribute="leading" secondItem="8XJ-eC-zeB" secondAttribute="leading" id="Q5Y-Y2-vWh"/>
+                                    <constraint firstAttribute="trailing" secondItem="FJV-Ee-c4h" secondAttribute="trailing" id="dMi-1e-XFW"/>
+                                    <constraint firstAttribute="bottom" secondItem="FJV-Ee-c4h" secondAttribute="bottom" id="nVe-og-tBO"/>
+                                    <constraint firstItem="FJV-Ee-c4h" firstAttribute="top" secondItem="8XJ-eC-zeB" secondAttribute="top" id="pUF-DR-f4D"/>
+                                </constraints>
                                 <size key="customSize" width="180" height="180"/>
+                                <connections>
+                                    <outlet property="gifImageView" destination="FJV-Ee-c4h" id="dSz-0D-h56"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

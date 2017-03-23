@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E5F12C96A924E54A1AD574A /* Pods_trendingGIFApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10406B4F5DD8BD7680C5FAAE /* Pods_trendingGIFApp.framework */; };
+		8B9716C91E844267002EBBAE /* gifCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9716C81E844267002EBBAE /* gifCollectionViewCell.swift */; };
 		8BEFD45B1E84265500E7B9F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFD45A1E84265500E7B9F1 /* AppDelegate.swift */; };
 		8BEFD45D1E84265500E7B9F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFD45C1E84265500E7B9F1 /* ViewController.swift */; };
 		8BEFD4601E84265500E7B9F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEFD45E1E84265500E7B9F1 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		10406B4F5DD8BD7680C5FAAE /* Pods_trendingGIFApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trendingGIFApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9716C81E844267002EBBAE /* gifCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gifCollectionViewCell.swift; sourceTree = "<group>"; };
 		8BEFD4571E84265500E7B9F1 /* trendingGIFApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trendingGIFApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEFD45A1E84265500E7B9F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEFD45C1E84265500E7B9F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				8BEFD4691E84265500E7B9F1 /* Info.plist */,
 				8BEFD4611E84265500E7B9F1 /* trendingGIFApp.xcdatamodeld */,
 				8BEFD48B1E84270A00E7B9F1 /* TrendingGIFCollectionViewController.swift */,
+				8B9716C81E844267002EBBAE /* gifCollectionViewCell.swift */,
 			);
 			path = trendingGIFApp;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			files = (
 				8BEFD45D1E84265500E7B9F1 /* ViewController.swift in Sources */,
 				8BEFD45B1E84265500E7B9F1 /* AppDelegate.swift in Sources */,
+				8B9716C91E844267002EBBAE /* gifCollectionViewCell.swift in Sources */,
 				8BEFD48C1E84270A00E7B9F1 /* TrendingGIFCollectionViewController.swift in Sources */,
 				8BEFD4631E84265500E7B9F1 /* trendingGIFApp.xcdatamodeld in Sources */,
 			);
@@ -592,6 +596,7 @@
 				8BEFD4841E84265500E7B9F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BEFD4851E84265500E7B9F1 /* Build configuration list for PBXNativeTarget "trendingGIFAppTests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +605,7 @@
 				8BEFD4871E84265500E7B9F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BEFD4881E84265500E7B9F1 /* Build configuration list for PBXNativeTarget "trendingGIFAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -608,6 +614,7 @@
 				8BEFD48A1E84265500E7B9F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
