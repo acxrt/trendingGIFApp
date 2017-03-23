@@ -10,11 +10,13 @@ import Foundation
 import UIKit
 
 import Alamofire
+import SwiftGifOrigin
 
 
 class TrendingGIFCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     
     var colors = [UIColor.red, UIColor.blue, UIColor.gray, UIColor.green, UIColor.black]
+    var gifs:[String] = []
     
     let marginBetweenGifs: CGFloat = 5.0
     
@@ -23,30 +25,26 @@ class TrendingGIFCollectionViewController: UICollectionViewController, UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let numberOfGifs = 20
-        loadTrendingGifs(limit: numberOfGifs)
+        let numberOfGifs = 1
+        let apiKey = "dc6zaTOxFJmzC" // TODO: Request a Production Key
+        loadTrendingGifsWith(limit: numberOfGifs, apiKey: apiKey)
         
     }
     
     
     // MARK: - UICollectionViewDataSource protocol
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //return gifs.count
-        return colors.count
+      
+        return gifs.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell : gifCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "gifCell", for: indexPath) as! gifCollectionViewCell
         
+        let gif = UIImage.gif(url: gifs[indexPath.item])
         
-        if let url = NSURL(string: "http://media0.giphy.com/media/3oKIPkn074os2OhrOw/giphy-downsized.gif") {
-            if let data = NSData(contentsOf: url as URL) {
-                cell.gifImageView.image = UIImage(data: data as Data)
-            }        
-        }
-        
-        
+        cell.gifImageView.image = gif
         return cell
     }
 
@@ -71,20 +69,41 @@ class TrendingGIFCollectionViewController: UICollectionViewController, UICollect
     
     
     // MARK: - Load trending GIFs from API
-    func loadTrendingGifs(limit: Int) {
+    func loadTrendingGifsWith(limit: Int, apiKey: String) {
         
-        Alamofire.request("http://api.giphy.com/v1/gifs/trending?limit=\(limit)&api_key=dc6zaTOxFJmzC").responseJSON { response in
-//            print(response.request)  // original URL request
-//            print(response.response) // HTTP URL response
-//            print(response.data)     // server data
-//            print(response.result)   // result of response serialization
-//            
-            if let JSON = response.result.value {
-                print("JSON: \(JSON)")
-            }
-        }
+        let urlString = "http://api.giphy.com/v1/gifs/trending?limit=\(limit)&api_key=\(apiKey)"
         
+//        Alamofire.request(urlString, method: .get).validate().responseJSON { response in
+//            switch response.result {
+//            case .success(let value):
+//                let json = JSON(value)
+//                print("JSON: \(json)")
+//                
+//                // TODO: populate gifs var with url from response
+//                
+//                for _ in 1...7 {
+//                    self.gifs.append("http://media0.giphy.com/media/3oKIPkn074os2OhrOw/giphy-downsized.gif")
+//                }
+//                
+//                self.collectionView?.reloadData()
+//                
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
         
     }
+    
+    func convertToDictionary(text: String) -> [String: Any]? {
+        if let data = text.data(using: .utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        return nil
+    }
+    
     
 }
